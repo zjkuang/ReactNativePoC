@@ -22,5 +22,9 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
       </activity>
+      <activity
+        android:name="MicroBlinkNativeModule.MicroBlinkActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode|screenLayout|smallestScreenSize"
+        android:exported="false" />
     </application>
 </manifest>

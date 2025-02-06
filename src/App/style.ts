@@ -1,20 +1,17 @@
 import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  containerView: {
+    width: '100%',
+    height: '100%',
+    alignItems: 'center', // along secondary axis
+    justifyContent: 'center', // along primary axis
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  scanButtonText: {
+    borderColor: 'lightgrey',
+    borderRadius: 5,
+    borderWidth: 1,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
   },
 });
