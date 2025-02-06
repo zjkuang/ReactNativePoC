@@ -35,7 +35,7 @@ public class MicroBlinkNativeModule extends ReactContextBaseJavaModule {
         }
         MicroBlinkActivity.scanPromise = promise;
         Intent intent = new Intent(reactApplicationContextContext, MicroBlinkActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         reactApplicationContextContext.startActivity(intent);
     }
 }
