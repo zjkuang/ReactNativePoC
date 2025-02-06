@@ -116,4 +116,9 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    implementation(platform("com.microblink.blinkreceipt:blinkreceipt-bom:1.8.7"))
+    implementation("com.microblink.blinkreceipt:blinkreceipt-core")
+    implementation("com.microblink.blinkreceipt:blinkreceipt-recognizer")
+    implementation("com.microblink.blinkreceipt:blinkreceipt-camera-ui")
 }
