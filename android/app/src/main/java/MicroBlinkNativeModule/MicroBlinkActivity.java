@@ -34,12 +34,5 @@ public class MicroBlinkActivity extends AppCompatActivity {
         Log.d(MicroBlinkNativeModule.MICROBLINK_LOG_TAG, "MicroBlinkActivity.onCreate");
 
         launcher.launch(new CameraRecognizerOptions.Builder().build());
-//        if (scanPromise != null) {
-//            WritableMap map = Arguments.createMap();
-//            map.putString("result", "scanned (pretended)");
-//            scanPromise.resolve(map);
-//            scanPromise = null;
-//        }
-//        finish();
     }
 }
