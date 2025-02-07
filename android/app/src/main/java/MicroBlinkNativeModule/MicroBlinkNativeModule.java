@@ -11,11 +11,11 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
 public class MicroBlinkNativeModule extends ReactContextBaseJavaModule {
-    private static ReactApplicationContext reactApplicationContextContext;
+    private static ReactApplicationContext reactApplicationContext;
     public static String MICROBLINK_LOG_TAG = "MicroBlink";
 
     MicroBlinkNativeModule(ReactApplicationContext context) {
-        reactApplicationContextContext = context;
+        reactApplicationContext = context;
     }
 
     @NonNull
@@ -31,8 +31,8 @@ public class MicroBlinkNativeModule extends ReactContextBaseJavaModule {
             MicroBlinkActivity.scanPromise.reject("Force cancel", "A new scan call came in before this current promise is dismissed.");
         }
         MicroBlinkActivity.scanPromise = promise;
-        Intent intent = new Intent(reactApplicationContextContext, MicroBlinkActivity.class);
+        Intent intent = new Intent(reactApplicationContext, MicroBlinkActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        reactApplicationContextContext.startActivity(intent);
+        reactApplicationContext.startActivity(intent);
     }
 }
